@@ -68,16 +68,17 @@ a{
     background-color: #144499;
     color: white;
     transition: 0.5s ease-in;
+    cursor: pointer;
 }
 html{
     position: absolute;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    width: fit-content;
     overflow-x: hidden;
 }
 body{
-    /* position: absolute; */
+    /* position: relative; */
     /* font-family: 'poppins',sans-serif; */
     font-family: 'CircularStd', sans-serif;
 } 
@@ -244,6 +245,7 @@ main{
     border-radius: 5px;
 }
 .meet:hover{
+    cursor: pointer;
     background-color: white;
     color: #144499;
     border: 1px solid #144499;
@@ -303,6 +305,7 @@ main{
     border: 1px solid #3acf85;
 }
 .read:hover{
+    cursor: pointer;
     background-color: white;
     color: #144499;
     border: 1px solid #144499;
@@ -429,11 +432,6 @@ main{
         display: flex;
         padding-top: -100px;
         /* justify-content: space-between; */
-    }
-    .left{
-        /* border: 1px solid black; */
-        /* margin-right: 5px;
-        padding-right: -50px; */
     }
     .img{
         display: block;
@@ -564,7 +562,11 @@ main{
         height: 100px;
     }
     .plac{
-        width: 50%;
+        width: 60%;
+    }
+    .rec{
+        padding-left: 1px;
+        padding-right: 1px;
     }
     #rec1{
         padding-left: 200px;
@@ -613,7 +615,6 @@ main{
         font-size: 13px;
     }
 }
-
 
 
 @media(max-width: 768px){
