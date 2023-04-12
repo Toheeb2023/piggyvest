@@ -74,35 +74,67 @@ html{
     position: absolute;
     padding: 0;
     margin: 0;
+    /* white-space: normal; */
     /* width: fit-content; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
-    /* position: relative; */
+
     /* font-family: 'poppins',sans-serif; */
     font-family: 'CircularStd', sans-serif;
 } 
+
+.intro-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+}
+.intro-container .intro-content{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0px 30px;
+
+}
+.intro-content .create{
+    align-self: flex-start;
+}
+.downloads{
+    align-self: flex-start;
+}
+.intro-image{
+    display: none;
+}
 main{
     position: relative;
-    top: 70px;
-    /* border: 1px #144499 solid; */
+    top: 40px;
+    /* border: 1px solid #144499 ; */
     padding-top: 100px;
     /* width: 100%; */
 }
 #under{
     text-align: center;
+    position: relative;
+}
+.left{
+    position: sticky;
+    top: 300px;
+    border: 1px solid red;
 }
 .title{
     font-size: 1.3rem;
     color: #144499;
     font-weight: bold;
-    line-height: 50px;
+    /* line-height: 50px; */
 }
 .p1{
     font-size: 14px;
     color: #5d5a5a;
     font-weight: 600;
     margin-top: 15px;
+    line-height: 20px !important;
 }
 .earn{
     margin-top: 30px;
@@ -110,7 +142,7 @@ main{
     font-weight: 550;
     font-size: 13px;
 }
-#under .create{
+.intro-container .create{
     margin-top: 12px;
     padding: 15px 40px;
     background-color: #30c57b;
@@ -120,7 +152,7 @@ main{
     border-radius: 7px;
     cursor: pointer;
 }
-#under .create:hover{
+.intro-container .create:hover{
     cursor: pointer;
     background-color: white;
     color: #144499;
@@ -151,6 +183,7 @@ main{
 }
 .img{
     display: none;
+    visibility: hidden;
 }
 #sec{
    text-align: center; 
@@ -183,11 +216,12 @@ main{
     color: #144499;
 }
 #cards{
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 50px 30px;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
     /* margin-left: -10px; */
 }
 .card-1{
@@ -433,26 +467,17 @@ main{
         padding-top: -100px;
         /* justify-content: space-between; */
     }
-    .img{
+    .intro-image{
         display: block;
         /* margin-left: -1500px; */
-        margin-top: -40px;
+        /* margin-top: -40px; */
         /* border: 1px solid green; */
-        margin-left: -500px;
+        /* margin-left: -500px; */
         /* padding-left: -50px; */
-        padding-right: 40px;
-        flex-grow: 1;
+        /* padding-right: 40px; */
+        /* flex-grow: 1; */
         /* width: 100%; */
         /* width: 500px; */
-    }
-    .im{
-        height: 650px;
-        width: 80%;
-        /* margin-right: -100px; */
-        /* padding-left: 500px; */
-        /* padding-right: 300px; */
-        /* width: fit-content; */
-        /* border: 1px solid black; */
     }
     .left{
         text-align: start;
@@ -465,7 +490,7 @@ main{
     }
     #under .downloads{
         /* margin-left: -720px; */
-        position: absolute;
+        /* position: absolute; */
     }
     .title{
         font-size: 33px;
@@ -631,6 +656,10 @@ main{
     .nav-bar{
         padding: 0 20px;
         width: 100%;
+    }
+    .intro-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 .hamburger{
     display: block;
