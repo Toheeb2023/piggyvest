@@ -2,7 +2,6 @@ const hamburger = document.querySelector('.hamburger');
 const links = document.querySelector('.links');
 const cols = document.querySelector('.show-links');
 
-
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     links.classList.toggle('active'); 
