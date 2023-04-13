@@ -105,12 +105,15 @@ button:hover{
     background-color: #062863;
     cursor: pointer;
 }
-.h4{
+a{
     text-align: center;
     color: #fff;
     padding: 50px 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
-.h4:hover{
+a:hover{
     color: gray;
     cursor: pointer;
     transition: .2s ease;
