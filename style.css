@@ -488,10 +488,6 @@ main{
         /* line-height: 0; */
         /* margin-right: 300px; */
     }
-    #under .downloads{
-        /* margin-left: -720px; */
-        /* position: absolute; */
-    }
     .title{
         font-size: 33px;
         line-height: 52px;
@@ -509,6 +505,10 @@ main{
     .links{
         font-size: large;
         font-weight: bold;
+    }
+    .links a:hover{
+        color: #30c57b;
+        transition: .1s ease-in;
     }
     .li-b{
         font-size: large;
