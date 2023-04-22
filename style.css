@@ -255,6 +255,7 @@ main{
 }
 .save-img{
     display: none;
+    object-fit: cover;
 }
 .saver h1{
     color: #144499;
@@ -277,6 +278,9 @@ main{
     border: 1px solid #3acf85;
     margin-top: 10px;
     border-radius: 5px;
+}
+.save-img{
+    object-fit: cover;
 }
 .meet:hover{
     cursor: pointer;
