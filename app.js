@@ -12,4 +12,3 @@ document.querySelectorAll('.li').forEach(n => n.addEventListener('click', () => 
     hamburger.classList.remove('active')
     links.classList.remove('active')
 }))
-
