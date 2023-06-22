@@ -229,6 +229,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .save{
     /* width: 350px; */
@@ -694,6 +695,7 @@ font-size: 20px;
         flex-direction: row;
         /* gap: 10px; */
         padding: 0 100px;
+        align-items: center;
         /* margin-left: 230px; */
         justify-content: space-evenly;
     }
